@@ -3,9 +3,9 @@ In this example we're implementing a basic logic app to receive an RFC call.
 
 In the logic app we use the 'Receive from SAP' as action trigger.\
 In the settings of this action, you enter :
-* GatewayHost = hostname where the SAP Gateway is running
-* GatewayService = port number of the SAP Gateway, typically this is ```33<SAP SystemId>```, eg ```3300```
-* ProgramId = this is the program id that the Logic App Gateway will register at the SAP Gateway. You can choose this name. The program id will also be used in the RFC Connection which will be used by the SAP system to call the logic app.
+- GatewayHost = hostname where the SAP Gateway is running
+- GatewayService = port number of the SAP Gateway, typically this is ```33<SAP SystemId>```, eg ```3300```
+- ProgramId = this is the program id that the Logic App Gateway will register at the SAP Gateway. You can choose this name. The program id will also be used in the RFC Connection which will be used by the SAP system to call the logic app.
 Degree of Parallellism = nr of times the programId will be registered at the SAP Gateway. Basically this represents the number of parallel calls the logicApp will be able to handle.
 
 <img src='Images\receive\logicApp.JPG'>
@@ -30,12 +30,12 @@ Note :
 <img src='Images\receive\sm59Error.jpg'>
 
 * In case of a connection error and the gateway is correct, you need to check the Gateway security settings. In my case these settings only allowed local programs to register at the Gateway security.
-Gateway Monitor (Transaction smgw) -> Goto -> Expert Functions -> External Security --> Maintain ACL files
-Here I needed to change the Reginfo.dat file. (see also [Security Settings for Gateway - Making Security Settings for External Programs](https://help.sap.com/viewer/62b4de4187cb43668d15dac48fc00732/7.3.20/en-US/48b2096b7895307be10000000a42189b.html).
+Gateway Monitor (Transaction smgw) -> Goto -> Expert Functions -> External Security --> Maintain ACL files.
+Here I needed to change the ```Reginfo.dat file```. (see also [Security Settings for Gateway - Making Security Settings for External Programs](https://help.sap.com/viewer/62b4de4187cb43668d15dac48fc00732/7.3.20/en-US/48b2096b7895307be10000000a42189b.html).
 
 <img src='Images\receive\securitySettings.jpg'>
 
-reginfo.dat
+```reginfo.dat```
 
 ```
 #VERSION=2
