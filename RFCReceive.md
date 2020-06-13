@@ -36,7 +36,7 @@ Note :
 * In case of a connection error and the gateway is correct, you need to check the Gateway security settings. In my case these settings only allowed local programs to register at the Gateway security.
 Gateway Monitor (Transaction smgw) -> Goto -> Expert Functions -> External Security --> Maintain ACL files.
 Here I needed to change the ```Reginfo.dat file```.\
-(see also [Security Settings for Gateway - Making Security Settings for External Programs](https://help.sap.com/viewer/62b4de4187cb43668d15dac48fc00732/7.3.20/en-US/48b2096b7895307be10000000a42189b.html).
+See [Security Settings for Gateway - Making Security Settings for External Programs](https://help.sap.com/viewer/62b4de4187cb43668d15dac48fc00732/7.3.20/en-US/48b2096b7895307be10000000a42189b.html).
 
 <img src='Images\receive\securitySettings.jpg'>
 
@@ -60,4 +60,4 @@ Here you can see the xml contents of the RFC call.
 <img src='Images\receive\RFCxml.jpg'>
  
 Now the SAP call is successfully working you can implement your logicApp.
-See [RFC Implementation](RFCImplementation).
+See [RFC Implementation](RFCImplementation).\
