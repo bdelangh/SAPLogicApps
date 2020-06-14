@@ -3,10 +3,11 @@ In these blogs you can receive documentation on how to integrate SAP with Azure 
 
 ## Overview
 The following topics are covered :
-- Call RFC from Azure Logic App (ToDo)
+- [Call RFC from Azure Logic App](RFCSend.md)
 - [Receive RFC from Azure Logic App](RFCReceive.md)
 - [Implement a RFC using Azure Logic App](/RFCImplementation.md)
 - RFC Fan Out (ToDo)
+- Error Handling (ToDo)
 - Transaction Handling (ToDo)
 
 
